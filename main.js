@@ -1,7 +1,7 @@
 function obtenerResultados(textoBusqueda, pagina, tipo) {
     /*  */
     let resultados = [];
-    $.getJSON("http://www.omdbapi.com/?apikey=21ecbf8f&type=" + tipo + "&s=" 
+    $.getJSON("https://www.omdbapi.com/?apikey=21ecbf8f&type=" + tipo + "&s=" 
         + textoBusqueda + "&page=" + pagina, function(resultado) {
         $.each(resultado.Search, function(ind, val) {
             resultados.push(val);
